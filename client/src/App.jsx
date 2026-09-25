@@ -17,7 +17,7 @@ function App() {
   const [selectedCompanies, setSelectedCompanies] = useState([])
   const [errors, setErrors] = useState({})
   const [submitError, setSubmitError] = useState('')
-  const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000'
+  const apiUrl = import.meta.env.VITE_API_URL || 'https://student-registration-vyh8.onrender.com'
 
   useEffect(() => {
     fetch(`${apiUrl}/api/students`)
